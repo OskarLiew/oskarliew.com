@@ -1,0 +1,15 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/lugo"]
+	path = themes/lugo
+	url = https://github.com/LukeSmithxyz/lugo.git
+[submodule "themes/wowchemy"]
+	path = themes/wowchemy
+	url = https://github.com/wowchemy/wowchemy-hugo-themes.git
+[submodule "paper"]
+	path = paper
+	url = https://github.com/nanxiaobei/hugo-paper.git
+[submodule "themes/paper"]
+	path = themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper.git

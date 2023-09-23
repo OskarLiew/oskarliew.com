@@ -1,0 +1,10 @@
+baseURL = 'https://oskarliew.com/'
+languageCode = 'en-us'
+title = 'Oskar Liew'
+theme = 'lugo'
+
+[params]
+github = 'OskarLiew'
+linkedin = 'oskarliew'
+twitter = 'LiewOskar'
+mastodon = 'oskarliew'

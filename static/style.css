@@ -1,0 +1,179 @@
+:root {
+	--bg-normal: #272E33;
+	--bg-dim: #1E2326;
+	--fg: #D3C6AA;
+	--red: #E67E80;
+	--orange: #E69875;
+	--yellow: #DBBC7F;
+	--green: #A7C080;
+	--teal: #83C092;
+	--blue: #7FBBB3;
+	--purple: #D699B6;
+	--gray: #859289;
+}
+
+body {
+	font-family: sans-serif;
+	background: var(--bg-normal);
+	color: var(--fg);
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+section#main {
+	max-width: 720px;
+	margin: auto;
+}
+
+article#content img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	text-align: center;
+	color: var(--gray);
+	padding-top: 8px;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	color: var(--green)
+}
+
+header h1 {
+	text-align: center;
+	font-size: 32px;
+}
+
+footer {
+	text-align: center;
+	clear: both;
+}
+
+/* For TAGLIST.HTML */
+.taglist {
+	text-align: center;
+	clear: both;
+	padding: 12px;
+}
+
+a:link {
+	color: var(--blue);
+}
+
+a:hover {
+	color: var(--teal);
+}
+
+a:visited {
+	color: var(--purple);
+}
+
+/* For NEXTPREV.HTML */
+#nextprev {
+	/* The container for both the previous and next articles. */
+}
+
+#prevart {
+	float: left;
+	text-align: left;
+}
+
+#nextart {
+	float: right;
+	text-align: right;
+}
+
+#nextart,
+#prevart {
+	max-width: 33%;
+}
+
+.topnav {
+	overflow: hidden;
+	font-size: 20px;
+}
+
+.topnav a {
+	float: left;
+	text-align: center;
+	text-decoration: none;
+}
+
+.topnav a:visited {
+	color: #7FBBB3;
+}
+
+.nav-right a {
+	float: right;
+	padding-left: 20px;
+	text-align: center;
+}
+
+#bio {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+
+#bio-left {
+	flex: 0 0 auto;
+	padding-right: 40px;
+}
+
+.round-img {
+	border-radius: 100%;
+}
+
+#bio-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#bio-text {
+	padding-bottom: 12px;
+	min-height: 7.5ex;
+}
+
+#socials a {
+	padding-right: 5px;
+}
+
+.post-list {
+	padding-top: 40px;
+}
+
+.post-list-item {
+	padding-bottom: 12px;
+}
+
+.post-list a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.post-list-item h1 {
+	margin-bottom: 4px;
+}
+
+.post-list-item time {
+	color: var(--gray);
+	font-size: 14px;
+	padding-bottom: 14px;
+}
+
+aside#meta {
+	padding-top: 40px;
+}
