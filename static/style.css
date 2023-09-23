@@ -175,5 +175,20 @@ a:visited {
 }
 
 aside#meta {
-	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+aside#meta h4 {
+	margin: 10px;
+	text-align: center;
+}
+
+aside#meta h5 {
+	margin: 0px;
+	text-align: center;
+}
+
+#page-404 {
+	text-align: center;
+	padding: 10px;
 }

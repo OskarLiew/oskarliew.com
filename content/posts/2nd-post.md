@@ -6,3 +6,9 @@ tags:
 - Hello
 - tag2
 ---
+
+```python
+x = 1
+y = [i**2 for i in x]
+print(y)
+```

@@ -1,5 +1,5 @@
 <div class="post-list">
-    {{ range where .Site.RegularPages "Section" "posts" }}
+    {{ range . }}
     <div class="post-list-item">
         <a href="{{ .RelPermalink }}">
             <div>

@@ -30,7 +30,8 @@
         </div>
     </div>
 
-    {{ partial "post-list" . }}
+    {{ $posts := .Site.GetPage "/posts"}}
+    {{ partial "post-list" $posts.Pages }}
 
 </section>
 {{end}}
