@@ -1,7 +1,6 @@
 baseURL = 'https://oskarliew.com/'
 languageCode = 'en-us'
 title = 'Oskar Liew'
-theme = 'lugo'
 
 [params]
 github = 'OskarLiew'
