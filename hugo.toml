@@ -9,3 +9,5 @@ twitter = 'LiewOskar'
 mastodon = 'oskarliew'
 
 relatedtext = "Tags"
+nextprev = true
+taglist = true
