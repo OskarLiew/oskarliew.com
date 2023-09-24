@@ -7,7 +7,7 @@ services:
     depends_on:
       - traefik
     restart: always
-    command: server
+    command: server -b https://oskarliew.com --appendPort false
     volumes:
       - ".:/src"
     labels:
