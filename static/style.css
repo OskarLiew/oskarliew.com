@@ -24,8 +24,8 @@ main {
 }
 
 section#main {
-	max-width: 720px;
 	margin: auto;
+	padding: 40px
 }
 
 article#content img {
@@ -51,6 +51,7 @@ h1 {
 header h1 {
 	text-align: center;
 	font-size: 32px;
+	margin-top: 0px;
 }
 
 footer {
@@ -100,6 +101,8 @@ a:visited {
 .topnav {
 	overflow: hidden;
 	font-size: 20px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
 .topnav a {
@@ -123,7 +126,6 @@ a:visited {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	padding-top: 80px;
 	padding-bottom: 40px;
 }
 
@@ -168,10 +170,6 @@ a:visited {
 	color: var(--gray);
 	font-size: 14px;
 	padding-bottom: 14px;
-}
-
-aside#meta {
-	padding-bottom: 40px;
 }
 
 aside#meta h4 {

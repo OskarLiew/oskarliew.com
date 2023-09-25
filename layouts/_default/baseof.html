@@ -16,13 +16,11 @@
 </head>
 
 <body>
-    {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
     <main>
         <header>
-            <h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1>
+            {{ partial "topnav" .Site.GetPage "/index" }}
         </header>
         <article>
-            {{ partial "topnav" .Site.GetPage "/index" }}
             {{ block "main" . }}
             {{ .Content }}
             {{ end }}
