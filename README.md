@@ -13,5 +13,5 @@ hugo server -D --noHTTPCache
 To create a new post:
 
 ```sh
-hugo new content posts/post-name.md
+hugo new posts/post-name.md
 ```
