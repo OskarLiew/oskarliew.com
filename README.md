@@ -4,6 +4,8 @@ This is the repository to my website/blog
 
 ## Development
 
+You can start a nix-shell virtual environment with `nix-shell`
+
 To start the development server:
 
 ```sh
