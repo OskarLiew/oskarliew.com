@@ -11,3 +11,6 @@ mastodon = 'oskarliew'
 relatedtext = "Tags"
 nextprev = true
 taglist = true
+
+[markup.highlight]
+noClasses=false

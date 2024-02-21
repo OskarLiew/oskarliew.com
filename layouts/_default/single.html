@@ -1,12 +1,10 @@
 {{ define "main" }}
 <header>
-    <h1>{{ .Title }}</h1>
+  <h1>{{ .Title }}</h1>
 </header>
 <section id="main">
-    <div>
-        <article id="content">
-            {{ .Content }}
-        </article>
-    </div>
+  <div>
+    <article id="content">{{ .Content }}</article>
+  </div>
 </section>
 {{ end }}
