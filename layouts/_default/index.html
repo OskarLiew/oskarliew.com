@@ -1,9 +1,8 @@
 {{ define "main" }}
 <section id="main">
-
     <div id="bio">
         <div id="bio-left">
-            <img src="/me.jpg" class="round-img" width="180px">
+            <img src="/me.jpg" class="round-img" width="180px" />
         </div>
         <div id="bio-right">
             <div id="bio-text">
@@ -12,26 +11,21 @@
             </div>
             <div id="socials">
                 {{ with .Site.Params.github }}
-                <a href="https://github.com/{{ . }}"><img src="/github.svg" title="Visit my github" height="32px"></a>
-                {{ end }}
-                {{ with .Site.Params.linkedin }}
+                <a href="https://github.com/{{ . }}"><img src="/github.svg" title="Visit my github" height="32px" /></a>
+                {{ end }} {{ with .Site.Params.linkedin }}
                 <a href="https://linkedin.com/in/{{ . }}"><img src="/linkedin.svg" title="Visit my LinkedIn profile"
-                        height="32px"></a>
-                {{end}}
-                {{ with .Site.Params.mastodon }}
+                        height="32px" /></a>
+                {{end}} {{ with .Site.Params.mastodon }}
                 <a href="https://mastodon.social/@{{ . }}"><img src="/mastodon.svg" title="Visit my mastodon"
-                        height="32px"></a>
-                {{end}}
-                {{ with .Site.Params.twitter }}
+                        height="32px" /></a>
+                {{end}} {{ with .Site.Params.twitter }}
                 <a href="https://twitter.com/{{ . }}"><img src="/twitter.svg" title="Visit my twitter... I mean X"
-                        height="32px"></a>
+                        height="32px" /></a>
                 {{end}}
             </div>
         </div>
     </div>
 
-    {{ $posts := .Site.GetPage "/posts"}}
-    {{ partial "post-list" $posts.Pages }}
-
+    {{ $posts := .Site.GetPage "/posts"}} {{ partial "post-list" $posts.Pages }}
 </section>
 {{end}}

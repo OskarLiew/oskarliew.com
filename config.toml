@@ -6,7 +6,7 @@ title = 'Oskar Liew'
 github = 'OskarLiew'
 linkedin = 'oskarliew'
 twitter = 'LiewOskar'
-mastodon = 'oskarliew'
+# mastodon = 'oskarliew'  # I don't really use mastodon
 
 relatedtext = "Tags"
 nextprev = true

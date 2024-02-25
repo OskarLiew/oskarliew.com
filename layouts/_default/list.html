@@ -4,12 +4,9 @@
 </header>
 <section id="main">
     <div>
-        <article id="content">
-            {{ .Content }}
-        </article>
+        <article id="content">{{ .Content }}</article>
     </div>
 
     {{ partial "post-list" .Pages}}
-
 </section>
 {{end}}

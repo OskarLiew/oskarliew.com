@@ -43,7 +43,8 @@ a:visited {
   color: var(--purple);
 }
 
-p > code {
+p code,
+ul code {
   color: var(--green);
   background-color: var(--bg-dim);
   padding: 0.15em 0.5em; /* Padding around the code */
@@ -192,7 +193,6 @@ footer {
 .post-list-item time {
   color: var(--gray1);
   font-size: 14px;
-  padding-bottom: 14px;
 }
 
 aside#meta h4 {
