@@ -1,7 +1,7 @@
 ---
 title: "How I Learned to Stop Worrying and Love the Terminal"
 date: 2024-02-17T14:45:25+01:00
-draft: true
+draft: false
 tags:
   - Terminal
   - Tools
@@ -9,19 +9,24 @@ tags:
 
 This post is a reflection on how how my view of the terminal changed from
 intimidating and esoteric to `$HOME` sweet `$HOME`. The terminal has become an
-incrediby productive tool for myself, that I use all the time. The reasons why
+incrediby productive tool for myself that I use all the time. The reasons why
 you would want to use a terminal instead of GUI-based tools are many.
 
 <!--more-->
 
 - The ability to automate repetetive tasks
-- Many GUIs for tools like `git`, are missing features that are available at the
+- Many GUIs for tools like `git` are missing features that are available at the
   command line
 - Full customizability. You can create the perfect tool for you
 - A mouse-free workflow. Once you cut the cord you will notice how clumsy it is
   for most tasks
 - Compared to using an IDE, you will gain a better understanding of how your
   environment works
+
+Despite being ancient technology by computing standards, it feels like the
+terminal is going stronger than ever, with tons of new and exciting tools and
+growing communities like [r/unixporn](https://www.reddit.com/r/unixporn/)
+pushing the boundaries of what's possible in a shell.
 
 I'm going to talk about my history with the termial, what key insights helped me
 gain a better understanding of Linux, as well as some of my favourite
@@ -35,24 +40,24 @@ Minecraft, but with little success. During that time, I had occasionally opened
 CMD, mostly by accident, but it was always promptly closed.
 
 It was first when I started university that I encountered Linux, and Linux fan
-boys, for the first time. Out of the people I talked to on my first day,
-everyone seemed to only want to talk about their favourite distributions and
-what the benefits of Ubuntu were compared to Red Hat. I thought they were crazy.
-Thankfully I found a circle of friends who didn't care about Linux either.
+boys, for the first time. On my first day I had a stroke of back luck, and
+everyone I talked to seemed to only want to talk about their favourite
+distributions and what the benefits of Ubuntu were compared to Red Hat. I
+thought they were crazy. Thankfully I found a circle of friends who didn't care
+about Linux either.
 
 Soon after we had a Linux introduction course. We learned that `cd` changes the
 current directory (Linux for folder), `mv` and `cp` moved and copied files
-around and lastly that we could use `emacs` to edit text files. It all seemed
-like a convoluted file explorer. I still didn't get the point. There were so
-many commands with loads of options and the `man`-pages just made me more
-confused. If I ever needed to edit text files, I could just use notepad (oof, I
-know...).
+around and that we could use `emacs` to edit text files. It all seemed like a
+convoluted file explorer. I still didn't get the point. There were so many
+commands with loads of options and the `man`-pages just made me more confused.
+If I ever needed to edit text files, I could just use notepad (oof, I know...).
 
 A few years later I took a course in high-performance computing as part of my
 masters. The course had just become mandatory for a couple of popular masters
 programs and Big Data (TM) was all the rage. The course had gone from ~30
 dedicated students the year prior, to over 150 students, most of whom had never
-touched a compiler, myself included. It was evident that the professor was not
+touched a compiler, myself included. It was obvious that the professor was not
 very pleased.
 
 In the course we used C on a remote machine where we could not install our own
@@ -61,7 +66,8 @@ workflow, and it was rough. I was lucky enough to team up with an acquaintance
 with more Linux experience, and I ended up learning a great deal. Again, we used
 `emacs` for file editing and we used `tmux` to emulate several terminals inside
 the same window, so that we could edit the code and run the compiler
-side-by-side. We also used a little program called git to cooperate on the code.
+side-by-side. We also used a little program called `git` to cooperate on the
+code.
 
 It was first after I started my first job after university that the terminal
 became a core tool in my arsenal. We were working on a small deployment tool
@@ -72,14 +78,14 @@ linters, docker, and basic git.
 Over time I started to become quite comfortable in the Linux ecosystem inside
 the little VM that is WSL. I understood now what the Linux fan boys were talking
 about, and I wanted to dive deeper. For a while now, I have solely been using
-Linux at work and I intend to keep it that way.
+Linux for work and I'm not looking back.
 
 ## The enlightenment
 
 There were a number of insights that made a large difference in my understanding
 of the terminal and Linux in general. I still think of the terminal more or less
 as an advanced file explorer, which is perfect, because almost everying in Linux
-is a file. The commands, like `ls` and `cd` are simply executable files that
+is a file. The commands, like `ls` and `cd`, are simply executable files that
 exist in a directory where Linux knows to look for programs. These directories
 are found in an _environment variable_ called `$PATH`.
 
@@ -97,7 +103,7 @@ can be set so that only certain groups or users can read, write or execute
 certain files. Many commands and files outside of your home directory can only
 be accessed by the _root_ user. You can use `sudo <command>` to run a single
 command as if you were the root user. Do this with caution, however, since you
-might expose vurnerabilities or even break your system if you are not careful.
+might expose vulnerabilities or even break your system if you are not careful.
 
 Almost every Linux distribution will have a package manager that you can use to
 install programs easily from the command line (or with a GUI). In my opinion,
@@ -139,7 +145,7 @@ file will overwrite its contents, but you can append instead with `>>`.
 
 Finally, it's useful to be familiar with the Linux file system. The file system
 is structured like a tree, where the root directory is called `/`. The directory
-you will most often interact is your `$HOME` directory, located at
+you will most often interact with is your `$HOME` directory, located at
 `/home/username`, this is where all of your private files are stored. The tilde
 `~` character can be used as a shorthand for the home directory. Other
 directories that are good to know are
@@ -150,19 +156,18 @@ directories that are good to know are
 
 ## Unlocking the productivity
 
-The command-line takes a little bit getting used to and there are many things to
-learn. However, once you're armed with the insights listed above, and
-comfortable navigating the file-system and editing files, I believe the biggest
-hurdles are behind you. Now you're ready to get to the good parts, namely
-supercharging your productivity!
+The command-line takes some getting used to and there are many things to learn.
+However, once you're armed with the insights listed above, comfortable
+navigating the file-system and editing files, I believe the biggest hurdles are
+behind you. Now you're ready to get to the good parts!
 
 ### Discoverability
 
-Discovering what's possible and how to do it, can be tricky. Many commands will
+Discovering what's possible and how to do it can be tricky. Many commands will
 have a `man`-page, which is a manual that can be accessed with `man <command>`.
 When I started out I thought these manuals were very hard to read, but they have
 become more helpful over time. Another option is to use the `--help` flag that
-exists for most commands that I've found often gives more digestible
+exists for most commands, that I've found often gives more digestible
 information.
 
 I want to highlight a useful tool called [tldr](https://tldr.sh/) (too long
@@ -181,19 +186,19 @@ Below is the first couple of examples:
 
 ### Shell history
 
-Your shell keeps a history of the commands you've run recently. You probably
-know that by pressing the up-arrow to you can navigate your recent commands but
-this quickly becomes annoying. By pressing CTRL-R you are able to search your
-shell history to find commands you ran months ago. This is really useful when
-you know you've run a command before, but you cannot remember the exact options,
-or to save keystrokes running a common command.
+Your shell keeps a history of the commands you've run. You probably know that by
+pressing the up-arrow to you can navigate your most recent commands, but this
+quickly becomes annoying. By pressing CTRL-R you are able to search your shell
+history to find commands you ran months ago. This is really useful when you know
+you've run a command before, but you cannot remember the exact options, or to
+save keystrokes running a common command.
 
-You can supercharge the shell history search with a nice interface and fuzzy
+You can supercharge the shell history search with a nicer interface and fuzzy
 search with [fzf](https://github.com/junegunn/fzf), which I cannot recommend
 enough. During installation it will automatically replace CTRL-R to use fzf
 instead of the default search. But fzf can do much more than that! Personally, I
 use it to search `$HOME` to `cd` to far-away directories, list `tmux` sessions
-to attach to, and git branches to checkout.
+to attach to, and `git` branches to checkout.
 
 ### Aliases
 
@@ -218,7 +223,7 @@ alias gpssu='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 ### Searching and finding
 
 I strongly recommend that you familiarize yourself with `grep` and `find`. From
-the man-page of `grep` we learn that it "prints lines that match patterns" and
+the man-page of `grep` we learn that it _"prints lines that match patterns"_ and
 while it sounds simple, it's incredibly useful. A very common usecase is to
 search a log file for some information or to find lines in a man-page that
 mentions a certain word. For example, to quickly check if there is an option to
@@ -237,8 +242,8 @@ is mentioned.
 -T, --tabsize=COLS
 ```
 
-`find`, on the other hand, is used to "search for files in a directory
-hierarchy", according to the man-page. Sometimes you may find that you do not
+`find`, on the other hand, is used to _"search for files in a directory
+hierarchy"_, according to the man-page. Sometimes you may find that you do not
 know where a file is located, and that's when you'd use `find`. To search for a
 file with a certain name you could use `find . -name 'filename'` and find will
 recursively go through all directories and print every file it finds with a name
@@ -256,14 +261,14 @@ programs for productivity on the command line. Tmux stands for _terminal
 multiplexer_ and is a way to emulate several terminals within a single window.
 You can start a session by running `tmux`, which will give you a green bar at
 the bottom of the screen, indicating that it is active. I use tmux constantly,
-and without it I feel naked. I've found that it is especially useful when I have
-long-running tasks, like deep learning model training, that I want to have in
-the background and not risk terminating prematurely. I can simply detach from
-the session, and even if I close the terminal window I can be confident it's
-still going. It's also really useful when you are working on several projects at
-once, since you can easily jump between sessions to switch context. You can even
-script tmux so you can start up or attach to your development environment with a
-single command.
+to the point where I feel naked without it. I've found that it is especially
+useful when I have long-running tasks, like deep learning model training, that I
+want to have in the background and not risk terminating prematurely. I can
+simply detach from the session, and even if I close the terminal window I can be
+confident it's still going. It's also really useful when you are working on
+several projects at once, since you can easily jump between sessions to switch
+context. You can even script tmux so you can start up or attach to your
+development environment with a single command.
 
 The keybindings for tmux are not the most intuitive, so when starting out I
 would recommend this [cheat sheet](https://tmuxcheatsheet.com/). By default, all
@@ -288,28 +293,23 @@ If you think tmux might be useful for you I cannot recommend this amazing
 mini-course by [Chris Toomey](https://thoughtbot.com/upcase/tmux) enough. Follow
 it and you wil end up with a really usable configuration.
 
-The last tip I want to share is backgrounding processes. Let's say you've
-started a long-running process, like a web server, that has taken over your
-terminal session. You can move that process to the background by pressing CTRL-Z
-and you will get back control of the terminal. You can foreground the process
-again with `fg`. To start a command to be run in the background from the
-beginning, you can add an `&` to the end of the command. Please note, however,
-that this is different from detaching from a tmux session, since when you close
-your terminal session with background tasks they will be terminated.
+The last tip I want to share is background processes. Let's say you've started a
+long-running process, like a web server, that has taken over your terminal
+session. You can move that process to the background by pressing CTRL-Z and you
+will get back control of the terminal. You can foreground the process again with
+`fg`. To start a command to be run in the background from the beginning, you can
+add an `&` to the end of the command. Please note, however, that this is
+different from detaching from a `tmux` session, since when you close your
+terminal session with background tasks they will be terminated.
 
 ## Conclusion
 
-There are many more things I would wish to mention, but I wanted to keep this
-post at a level where you should be able to follow along even with only a tiny
-amount of command-line experience. If you find yourself in that group of people
-then I hope that I've learned something new and that you maybe you might be
-willing to give life on the command life a try. I assure you, it can even be
-quite `$HOME`-ey.
-
-Despite being ancient technology by computing standards, it feels like the
-terminal is going stronger than ever, with tons of new and exciting tools and
-growing communities, like [r/unixporn](https://www.reddit.com/r/unixporn/)
-pushing the boundaries of what's possible in a shell.
+There are many more things wish to mention, but I wanted to keep this post at a
+level where you should be able to follow along even with only a tiny amount of
+command-line experience. If you find yourself in that group of people then I
+hope that I've learned something new and that you maybe you might be willing to
+give life on the command life a try. I assure you, it can even be quite
+`$HOME`-ey.
 
 In the future I may write posts about more advanced topics, like alternative
 shells and advanced customizations. But until then, happy hacking.
