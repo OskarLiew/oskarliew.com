@@ -7,7 +7,7 @@ tags:
   - Tools
 ---
 
-This post is a reflection on how how my view of the terminal changed from
+This post is a reflection on how my view of the terminal changed from
 intimidating and esoteric to `$HOME` sweet `$HOME`. The terminal has become an
 incrediby productive tool for myself that I use all the time. The reasons why
 you would want to use a terminal instead of GUI-based tools are many.
