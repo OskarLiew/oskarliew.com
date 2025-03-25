@@ -25,9 +25,7 @@ h1 {
 }
 
 header h1 {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 0px;
+  margin-top: 32px;
 }
 
 a {
@@ -67,11 +65,6 @@ li {
 main {
   max-width: 800px;
   margin: auto;
-}
-
-section#main {
-  margin: auto;
-  padding: 40px;
 }
 
 article#content img {
@@ -125,7 +118,6 @@ footer {
 .topnav {
   overflow: hidden;
   font-size: 20px;
-  padding-bottom: 20px;
   padding-top: 10px;
 }
 
@@ -174,11 +166,11 @@ footer {
 }
 
 #socials a {
-  padding-right: 5px;
+  padding-right: 6px;
 }
 
 .post-list-item {
-  padding-bottom: 18px;
+  padding-bottom: 6px;
 }
 
 .post-list a {
@@ -187,7 +179,8 @@ footer {
 }
 
 .post-list-item h1 {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
+  color: var(--green);
 }
 
 .post-list-item time {
@@ -196,17 +189,26 @@ footer {
 }
 
 .read-more-text {
-  color: var(--green);
+  color: var(--blue);
 }
 
-aside#meta h4 {
-  margin: 10px;
-  text-align: center;
+aside#meta div#container {
+  display: flex;
+  justify-content: space-between;
 }
 
-aside#meta h5 {
+aside#meta p#date {
+  text-align: left;
+}
+aside#meta p#wordcount {
+  text-align: right;
+}
+
+aside#meta p {
   margin: 0px;
-  text-align: center;
+  text-align: left;
+  color: var(--gray1);
+  font-size: 14px;
 }
 
 #page-404 {

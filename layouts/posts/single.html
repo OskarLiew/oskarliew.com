@@ -1,20 +1,16 @@
 {{ define "main" }}
-<header>
-    <h1>{{ .Title }}</h1>
-    <aside id="meta">
-        <div>
-            <section>
-                <h4 id="date"> {{ .Date.Format "2006 Jan 2" }} </h4>
-                <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-            </section>
-        </div>
-    </aside>
+<header id="post-header">
+  <h1>{{ .Title }}</h1>
+  <aside id="meta">
+    <div id="container">
+      <p id="date">{{ .Date.Format "2006 Jan 2" }}</p>
+      <p id="wordcount">{{ .WordCount }} Words</p>
+    </div>
+  </aside>
 </header>
 <section id="main">
-    <div>
-        <article id="content">
-            {{ .Content }}
-        </article>
-    </div>
+  <div>
+    <article id="content">{{ .Content }}</article>
+  </div>
 </section>
 {{ end }}

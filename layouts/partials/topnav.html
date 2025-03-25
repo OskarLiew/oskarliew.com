@@ -1,10 +1,18 @@
-<div class="topnav">
+<div></div>
+<div>
+  <div class="topnav">
     <a href="/"><img src="/logo.png" height="32px" /></a>
     <div class="nav-right">
-        <a href="/index.xml"><img src="/rss.svg" height="24" alt="RSS Feed" title="Subscribe via RSS for updates."></a>
-        {{ range .Pages }}
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
-
+      <a href="/index.xml"
+        ><img
+          src="/rss.svg"
+          height="24"
+          alt="RSS Feed"
+          title="Subscribe via RSS for updates."
+      /></a>
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ end }}
     </div>
+  </div>
 </div>
