@@ -6,6 +6,7 @@ title = 'Oskar Liew'
 github = 'OskarLiew'
 linkedin = 'oskarliew'
 twitter = 'LiewOskar'
+math = true
 # mastodon = 'oskarliew'  # I don't really use mastodon
 
 relatedtext = "Tags"
@@ -14,3 +15,12 @@ taglist = true
 
 [markup.highlight]
 noClasses=false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
